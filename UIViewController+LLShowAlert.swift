@@ -9,16 +9,18 @@
 import Foundation
 import UIKit
 
+let kUIViewControllerShowAlertExtensionErrorTitle = "Error"
+let kUIViewControllerShowAlertExtensionDismissActionTitle = "Dismiss"
+
 extension UIViewController
 {
     func showErrorAlert(withMessage message : String)
     {
-        let title = "Error"
-        let alertController = UIAlertController(title: title,
+        let alertController = UIAlertController(title: kUIViewControllerShowAlertExtensionErrorTitle,
                                                 message: message,
                                                 preferredStyle: .alert)
         
-        let cancelAction = UIAlertAction(title: "Dismiss",
+        let cancelAction = UIAlertAction(title: kUIViewControllerShowAlertExtensionDismissActionTitle,
                                          style: .cancel,
                                          handler: nil)
         

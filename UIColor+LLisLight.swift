@@ -8,6 +8,8 @@
 
 import Foundation
 
+//A cleaner version of an answer given here: http://stackoverflow.com/a/29044899/1301654
+
 extension UIColor
 {
     func isLight() -> Bool
